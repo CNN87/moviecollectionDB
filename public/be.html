@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Backend Movie Collection</title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/moviedbBEicon.ico">
+        <link rel="stylesheet" href="./assets/css/be.css" />
+        
+        
+        <script src="./assets/js/be/index.js" type="module" defer></script>
+    </head>
+    <body>
+        <nav>
+            <div class="Navbar">
+              <a>Movie-Collection</a>
+              <!-- <form class="navBarForm" role="search">
+                <input class="searchInput" type="search" placeholder="Film suchen" aria-label="Search">
+                <button class="searchBtn" type="submit">Suchen</button>
+              </form> -->
+            </div>
+        </nav>
+        <main>
+
+            <div class="formCont">
+                <h2>Einen neuen Film in die Datenbank eintragen:</h2>
+                
+                <form id="formCreateContent" class="form">
+                    <div class="form-group">
+                        <label for="title">Filmtitel:</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Titel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="moviedesc">Filmbeschreibung:</label>
+                        <textarea class="form-control" id="moviedesc" name="moviedesc" placeholder="Beschreibung" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="director">Regie:</label>
+                        <input type="text" class="form-control" id="director" name="director" placeholder="Regie" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Laufzeit:</label>
+                        <input type="number" class="form-control" id="duration" name="duration" placeholder="minuten?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="release">Erscheinungsjahr:</label>
+                        <input type="text" class="form-control" id="release" name="release" placeholder="(1999?)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cast">Cast:</label>
+                        <input type="text" class="form-control" id="cast" name="cast" placeholder="Schauspieler? (mit Komma trennen)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre:</label>
+                        <input type="text" class="form-control" id="genre" name="genre" placeholder="Fantasy oder Drama?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagesrc">Filmposter:</label>
+                        <input type="file" class="form-control" id="imagesrc" name="imagesrc" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Film in die DB Speichern</button>
+                </form>
+            </div>
+            
+            
+            <h2 class="headerListe">Liste der Movies aus der DB</h2>
+            <div id="contents" class="movieList">
+                Liste der Filme aus der Datenbank werden hier angezeigt:
+            </div>
+        </main>
+
+        <div class="footer">
+            <div> Movie-Collection_DB testproject with nodejs express couchdb - Copyright 2024 Sinan S.</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+.footer {
+    box-shadow: 20px 20px 10px 20px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(43, 48, 53, 1);
+    text-align:  center;
+    height: 20px;
+    padding-top: 20px;
+    font-size: small;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.679);
+    background-image: url('../img/film-102681_1920.jpg');
+    object-fit: cover;
+    color: whitesmoke;
+    margin: 0;
+}
+.Navbar {
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(43, 48, 53, 1);
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Scrollbar anpassen */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #1f2937; /* Dunkelgraue Hintergrundfarbe */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#141D2F, #198754); /* Verlauf von Dunkelblau zu Grün */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: linear-gradient(#D61CE6, #0056b3); /* Verlauf von Lila zu Blau */
+}
+
+/* Formular-Styling */
+#formCreateContent {
+    margin-top: 20px;
+}
+
+#formCreateContent .form-group {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+
+#formCreateContent label {
+    margin-bottom: 5px;
+}
+
+#formCreateContent input[type="text"],
+#formCreateContent input[type="number"],
+#formCreateContent textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#formCreateContent input[type="file"] {
+    width: 100%;
+}
+
+#formCreateContent button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#formCreateContent button:hover {
+    background-color: #0056b3;
+}
+
+/* Fehlermeldung */
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 0 0 15%;
+    max-width: 30%;
+    /* margin-right: 5%; */
+    display: flex;
+    align-items: center;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button,
+.form-group select {
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
+.formCont{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.headerListe{
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+.movieList{
+    padding-bottom: 40px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(left, #000000 0%, #777A7E 50%, #272727 100%);
+    background: linear-gradient(to right, #000000 0%, #777A7E 50%, #272727 100%);
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.container:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 5px green; 
+    border-color: green; 
+}
+
+.movieListImg {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+    width: 140px;
+    border-radius: 3px;
+}
+
+.movieListImg img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    width: 120px; 
+}
+
+.container button{
+    height: 50px;
+    align-items: center; 
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover{
+    background-color: rgba(191, 19, 19, 0.686);
+}
+.movieContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.movieInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #ccc;
+}
+
+.movieInfoHeader{
+    display: flex;
+    gap: 3px;
+    color: white;
+}

@@ -1,0 +1,294 @@
+body{
+    background-color: rgba(0, 0, 0, 0.679);
+    color: whitesmoke;
+    margin: 0;
+    background-image: url('../img/film-102681_1920.jpg');
+    object-fit: concovertain;
+}
+.Navbar {
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(43, 48, 53, 1);
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    /* border-radius: 5px; */
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.navBarForm{
+    display: flex;
+    box-sizing: border-box;
+    text-decoration: none;
+    white-space: nowrap;   
+    cursor: pointer;
+    gap: 5px;
+}
+.searchInput{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+.searchBtn {
+    font-size: 1rem; 
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: rgba(43, 48, 53, 1);
+    color: #198754;
+    border-color: #198754;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.searchBtn:hover{
+    background-color: green;
+    color: white;
+}
+.footer {
+    box-shadow: 20px 20px 10px 20px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(43, 48, 53, 1);
+    text-align:  center;
+    height: 20px;
+    padding-top: 20px;
+    font-size: small;
+  }
+
+
+/* css */
+header,
+main,
+footer {
+    position: relative;
+    display: block;
+    /* width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background-color: #ccd;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+}
+main {
+    /* background-color: #eee; */
+    padding-top:50px;
+    padding-bottom:50px;
+   
+}
+.container {
+    position: relative;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    background: rgba(43, 48, 53, 1);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.info {
+    position: relative;
+    display: block;
+    color: yellow;
+    font-size:.8em;
+}
+.movieImg {
+    width: 150px;
+}
+
+/* Andere Stile hier ... */
+/* .film-info {
+
+} */
+.filmTitle {
+    width: 200px;
+    /* height: 200px; */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+}
+
+.filmTitle img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+.lightboxContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 90%;
+    
+}
+
+.lightboxClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+}
+.filmContainer {
+    display: flex;
+    flex-wrap: wrap; /* Umbruch der Elemente bei Bedarf */
+    justify-content: flex-start; 
+}
+
+.lbFilmContainer {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.lbFilmContainer img{
+    width: 350px;
+}
+
+/* Bootstrap card styles */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-color: #fff;
+    background: #000000;
+    background: -moz-linear-gradient(left, #000000 0%, #777A7E 50%, #272727 100%);
+    background: -webkit-linear-gradient(left, #000000 0%, #777A7E 50%, #272727 100%);
+    background: linear-gradient(to right, #000000 0%, #777A7E 50%, #272727 100%);
+}
+
+.card:hover {
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); */
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 5px green; /* Box Shadow beim Überfahren der Karte */
+    border-color: green; /* Border-Farbe beim Überfahren der Karte */
+}
+
+.cardImgTop {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Anpassen der maximalen Höhe des Bildes */
+    object-fit: cover; /* Skalierung des Bildes, um es in den Rahmen zu passen */
+    border-bottom: 1px solid #eee;
+}
+
+.cardBody {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    /* color: #333; */
+}
+
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.card.filmTitle {
+    flex: 0 0 200px; /* Festlegen der Breite der Kacheln auf 200px */
+    margin: 10px; /* Abstand zwischen den Kacheln */
+}
+
+.genreContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 11px;
+    gap: 5px;
+    
+    color: lightgray;
+}
+
+.genre {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-right: 5px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Scrollbar anpassen */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #1f2937; /* Dunkelgraue Hintergrundfarbe */
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#141D2F, #198754); /* Verlauf von Dunkelblau zu Grün */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: linear-gradient(#D61CE6, #0056b3); /* Verlauf von Lila zu Blau */
+}
+
+.noMatchText{
+    color: red;
+    opacity: .7;
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Harry Potter",
+        "release": "20.01.1999",
+        "duration": 180,
+        "genre": "fantasy",
+        "regie": "Lois Hamilton",
+        "cast": "Daniel Radcliff, Emma Watson, Rupert Ginley",
+        "imagesrc": "imagepfad zum bild hier",
+        "moviedesc": "Zauberschule im 1990 wer weiß das schon"
+    },
+    {
+        "title": "Harry Potter 2",
+        "release": "20.01.1999",
+        "duration": 180,
+        "genre": "fantasy",
+        "regie": "Lois Hamilton",
+        "cast": "Daniel Radcliff, Emma Watson, Rupert Ginley",
+        "imagesrc": "imagepfad zum bild hier",
+        "moviedesc": "Zauberschule im 1990 wer weiß das schon"
+    },
+    {
+        "title": "Harry Potter 3",
+        "release": "20.01.1999",
+        "duration": 180,
+        "genre": "fantasy",
+        "regie": "Lois Hamilton",
+        "cast": "Daniel Radcliff, Emma Watson, Rupert Ginley",
+        "imagesrc": "imagepfad zum bild hier",
+        "moviedesc": "Zauberschule im 1990 wer weiß das schon"
+    }
+]
